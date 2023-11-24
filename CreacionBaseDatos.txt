@@ -1,0 +1,19 @@
+CREATE DATABASE caninosyfelinosdb,
+
+USE caninosyfelinosdb,
+
+CREATE TABLE razas(
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    raza VARCHAR(50) NOT NULL UNIQUE
+);
+
+CREATE TABLE citas medicas(
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    mascota VARCHAR(50) NOT NULL,
+    edad INT NOT NULL,
+    idRaza INT NOT NULL,
+    fecha DATE NOT NULL,
+    hora TIME NOT NULL,
+    amo VARCHAR(100) NOT NULL,
+    FOREIGN KEY(idRaza) REFERENCES razas(id)
+);

@@ -1,0 +1,20 @@
+#videos {
+    width: 100%;
+}
+
+#videos h2 {
+    text-align: center;
+}
+
+.video {
+    float: left;
+    width: 47%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+#videos div {
+    margin: 20px;
+}

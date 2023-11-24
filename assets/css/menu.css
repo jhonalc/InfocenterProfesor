@@ -1,0 +1,23 @@
+header .contenedor{
+    display: table;
+}
+
+.menu {
+    position: static;
+    height: auto;
+    width: auto;
+    float: left;
+    display: flex;
+}
+.menu a{
+    display: block;
+    color: white;
+    height: 50px;
+    text-decoration: none;
+    padding: 15px;
+    font-weight: bold;
+}
+
+.menu a:hover{
+    background-color: #050948;
+}

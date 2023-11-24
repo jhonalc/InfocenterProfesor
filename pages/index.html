@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- https://fontawesome.com/v4/icons/ biblioteca de iconos-->
+    <title>Centro Veterinario</title>
+    <link rel="stylesheet" href="assets/css/index.css">
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/peticionesAjax.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/css/select2.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/js/select2.min.js"></script>
+</head>
+<body>
+    <header>
+        <div class="encabezado">
+            <h1 class="fa fa-paw"> Centro Veterinario Caninos y Felinos</h1>
+            <img src="assets/img/logo.jpg" alt="">
+        </div>
+        <div class="contenedor">
+            <label class="fa fa-bars fa-2x" for=""></label>
+            <nav class="menu">
+                <a href="">Home</a>
+                <a href="">Servicios</a>
+                <a href="">Productos</a>
+                <a href="">Guarderia</a>
+                <a href="">Promociones</a>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section id="banner">
+            <img src="assets/img/banner.jpg" alt="">
+        </section>
+        <section id="cuidados">
+                <div id="tarjetas">
+                   <div class="cuidadoviajes">
+                        <h3>Cuidados</h3>
+                        <p><img src="assets/img/cuidados.jpeg" width="200px" alt="">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa placeat 
+                        facere sed dolorem numquam, autem ratione iste mollitia labore libero.
+                        Quasi commodi eum impedit, dolores beatae repellendus quos quo a.</p>
+                        <a href="">Ver mas...</a>
+                   </div>
+                   <div class="cuidadoviajes">
+                        <h3>Viajes</h3>
+                        <p><img src="assets/img/viajes.jpeg" width="200px" alt="">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            Animi reprehenderit possimus, magnam error, doloribus 
+                            tempora ad repudiandae commodi itaque soluta, hic iure 
+                            beatae iusto praesentium veniam eligendi pariatur! Odio, quam. 
+                        </p>
+                        
+                        <a href="">Ver mas...</a>
+                   </div>
+                </div>
+                <div id="formulario">
+                    <!-- metodo post = envia los datos de forma oculta -->
+                    <!-- metodo get = envia los datos por la url del navegador (visibles) -->
+                    <!-- action = peticion (php) -->
+                    <form action="" method="post" id="formularioCita">
+                        <h2>Solicitar cita médica</h2>
+                        <label for="">Mascota</label>
+                        <input type="text" id="mascota" placeholder="Ingrese nombre de la mascota">
+                        
+                        <label for="">Edad</label>
+                        <input type="number" id="edad" placeholder="Ingrese edad">
+                        
+                        <label for="">Raza</label>
+                        <select name="" id="razas">
+                            <option value="">Seleccione</option>
+                            <!-- <option value="1">Shih Tzu</option>
+                            <option value="2">Boxer</option>
+                            <option value="3">Akita</option> -->
+                        </select>
+                        
+                        <label for="">Fecha</label>
+                        <!-- <input type="datetime-local" id="fecha" name="" id=""> -->
+                        <input type="date" id="fecha">
+                        
+                        <label for="">Hora</label>
+                        <input type="time" name="" id="hora">
+                        
+                        <label for="">Amo</label>
+                        <input type="text" id="amo" placeholder="Ingrese el nombre del amo">
+                        
+                        <button type="button"> <i class="fa fa-check-square-o"></i> Validar Cita</button>
+                        <button type="reset"> <i class="fa fa-trash"></i> Limpiar</button>
+                    </form>
+                </div>
+        </section>
+        <section id="videos">
+            <div class="video">
+                <iframe width="400" height="250" src="https://www.youtube.com/embed/vgXw0H-jhUg?si=AINsxfiH6_acqlu5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+            <div class="video">
+                <iframe width="400" height="250" src="https://www.youtube.com/embed/u0XHVssfsYM?si=8tbEdr5KlBuwPtoY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+        </section>
+        <section id="mapa">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15863.72750624323!2d-75.61032004458009!3d6.272688599999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e4429b6b142c265%3A0xe13ddf719df8b972!2sVeterinario%20en%20su%20hogar!5e0!3m2!1ses!2sco!4v1699531437067!5m2!1ses!2sco" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
+        
+    </main>
+    <footer> 
+        <div class="container"> 
+            <div class="footer-content"> 
+                <h3>Contactanos</h3> 
+                <p>Línea gratuita: 018000-5555555</p> 
+                <p>Email: centroveterinariocaninosyfelinos@gmail.com</p> 
+            </div> 
+            <div class="footer-content"> 
+                <h3>Enlaces rápidos</h3> 
+                <ul class="list"> 
+                    <li><a href="">Home</a></li> 
+                    <li><a href="">Acerca de..</a></li>
+                    <li><a href="">Servicios</a></li> 
+                    <li><a href="">Prodcutos</a></li> 
+                </ul> 
+            </div> 
+            <div class="footer-content"> 
+                <h3>Síganos</h3> 
+                <ul class="redes"> 
+                    <li><a href=""> <i class="fa fa-whatsapp fa-2x"></i> </a></li>
+                    <li><a href=""> <i class="fa fa-facebook fa-2x"></i> </a></li> 
+                    <li><a href=""> <i class="fa fa-instagram fa-2x"></i> </a></li> 
+                </ul> 
+            </div> 
+        </div> 
+        <div class="copy"> 
+            <p>&copy; 2023 Centro Veterinario Caninos y Felinos. Todos los derechos reservados </p> 
+        </div> 
+    </footer>
+    <script>
+        $(document).ready(function(){
+            $("#razas").select2({
+                placeholder: 'seleccione una raza',
+                allowClear: true,
+                width: '100%'
+            });
+        });
+    </script>
+</body>
+</html>

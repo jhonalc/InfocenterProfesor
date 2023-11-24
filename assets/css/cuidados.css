@@ -1,0 +1,92 @@
+#tarjetas{
+    width: 60%;
+    height: 550px;
+    float: left;
+}
+
+#formulario{
+    width: 40%;
+    height: 550px;
+    float: right;
+    padding-left: 20px;
+    padding-right: 10px;
+}
+
+.cuidadoviajes{
+    width: 100%;
+    height: 250px;
+    margin-left: 5px;
+    margin-bottom: 10px;
+    padding: 10px;
+    box-shadow: 2px 2px 3px 4px gray;
+    border-radius: 2px;
+}
+.cuidadoviajes p{
+    margin: 10px;
+    text-align: justify;
+    font-size: 20px;
+}
+
+.cuidadoviajes img{
+    float: right;
+    width: 250px;
+    height: 150px;
+    margin: 10px;
+}
+
+form {
+   width: 100%;
+   height: 515px;
+   background-color: #aaa;
+   padding: 5px; 
+}
+form h2{
+    text-align: center;
+    color: white;
+}
+
+input,
+select {
+    width: 100%;
+    height: 30px;
+    display: block;
+    font-size: 15px;
+    padding: 5px;
+    margin-bottom: 15px;
+}
+
+.label {
+    color: white;
+    width: 100%;
+    display: block;
+    font-size: 15px;
+}
+
+button[type="button"] {
+    float: left;
+    width: 45%;
+    margin-left: 15px;
+    margin-top: 10px;
+    padding: 20px;
+    background-color: #333;
+    border: none;
+    cursor: pointer;
+    color: #fff;
+}
+
+button[type="reset"] {
+    float: right;
+    width: 45%;
+    margin-right: 15px;
+    margin-top: 10px;
+    padding: 20px;
+    background-color: #333;
+    border: none;
+    cursor: pointer;
+    color: #fff;
+}
+
+#fecha{
+    margin: 15px;
+    
+}

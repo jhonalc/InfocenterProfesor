@@ -1,0 +1,66 @@
+footer{
+    color: #fff;
+    background-color: #555;
+    padding-top: 20px;
+}
+ 
+.container {
+    width: 1140px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+.footer-content{
+    width: 33.3%;
+}
+ 
+h3{
+    font-size: 28px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+.footer-content p{
+    width: 250px;
+    margin: auto;
+    padding: 7px;
+}
+.footer-content ul{
+    text-align: center;
+}
+.list{
+    padding: 0;
+}
+.list li{
+    width: auto;
+    text-align: center;
+    list-style-type: none;
+    padding: 7px;
+    position: relative;
+}
+.footer-content a{
+    text-decoration: none;
+    color: white;
+}
+.redes{
+    text-align: center;
+    padding: 0;
+}
+ 
+.redes li{
+    display: inline-block;
+    text-align: center;
+    padding: 5px;
+}
+ 
+.copy{
+    background-color: #313bc6;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 50px;
+}
+.copy p{
+    color: white;
+    margin: 0;
+    font-size: 16px;
+    padding: 7px;
+}
