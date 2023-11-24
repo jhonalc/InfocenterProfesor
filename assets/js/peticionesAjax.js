@@ -15,6 +15,10 @@ function getRazas(){
         dataType: "json"
     }).done(function(respuesta){
         console.log(respuesta);
+        $.each(respuesta, function(index, val){
+            console.log(val.raza);
+            $("#razas").append("<option value='"+val.id+"'>"+val.raza+"</option>");
+        });
     }).fail(function(error){
         console.log(error);
     });
